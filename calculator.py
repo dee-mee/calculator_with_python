@@ -17,8 +17,10 @@ def operations(num1=0, num2=0):
             try:
                 print("The result of Division is ",num1 / num2)
                 break
-            except ZeroError:
+            except ZeroDivisionError:
                 print("Please enter a VALUE bigger than that.")
+            except:
+                print("Try again!")
     else:
         print("That operation is currectly not available")
 
